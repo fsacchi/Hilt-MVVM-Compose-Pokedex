@@ -4,8 +4,8 @@ Pokédex app using [PokeApi](https://pokeapi.co/) built with jetpack Compose and
 
 <p float="left">
   <img width="30%" height="50%" src="https://github.com/fsacchi/Hilt-MVVM-Compose-Pokedex/blob/main/screenshots/home.png" />
+  <img width="30%" height="50%" src="https://github.com/fsacchi/Hilt-MVVM-Compose-Pokedex/blob/main/screenshots/detail1.png" />
   <img width="30%" height="50%" src="https://github.com/fsacchi/Hilt-MVVM-Compose-Pokedex/blob/main/screenshots/detail2.png" />
-  <img width="30%" height="50%" src="https://github.com/fsacchi/Hilt-MVVM-Compose-Pokedex/blob/main/screenshots/detail3.png" />
 </p>
 
 # Main Features
