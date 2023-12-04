@@ -38,7 +38,7 @@ Pokédex app using [PokeApi](https://pokeapi.co/) built with jetpack Compose and
 
 # License
 ```
-Copyright 2023 piashcse (Mehedi Hassan Piash)
+Copyright 2023 fsacchi (Felipe Meirelles Sacchi)
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
