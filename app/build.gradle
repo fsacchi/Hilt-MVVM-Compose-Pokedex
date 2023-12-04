@@ -1,0 +1,106 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.fsacchi.hilt_mvvm_compose_pokedex"
+        minSdk 21
+        targetSdk 34
+        versionCode 30
+        versionName "1.2.2"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = 17
+    }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion compose_compiler_version
+        kotlinCompilerVersion kotlin_version
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+    namespace 'com.fsacchi.hilt_mvvm_compose_pokedex'
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation "androidx.compose.ui:ui:$compose_version"
+    implementation "androidx.compose.material:material:$compose_version"
+    implementation "androidx.compose.material:material-icons-extended:$compose_version"
+    implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2'
+    implementation 'androidx.activity:activity-compose:1.8.1'
+    implementation 'androidx.navigation:navigation-runtime-ktx:2.7.5'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
+    debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
+
+    // compose navigation
+    implementation "androidx.navigation:navigation-compose:2.7.5"
+    implementation "androidx.hilt:hilt-navigation-compose:1.1.0"
+    // multidex
+    implementation "androidx.multidex:multidex:2.0.1"
+
+    // hilt
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+
+    // retrofit
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2"
+
+    // timber log
+    implementation 'com.jakewharton.timber:timber:5.0.1'
+
+    implementation "androidx.constraintlayout:constraintlayout-compose:1.0.1"
+    // pagination
+    implementation "androidx.paging:paging-compose:3.2.1"
+
+    // coil with animation
+    def land_scapist_version = "2.2.12"
+    implementation "com.github.skydoves:landscapist-coil:$land_scapist_version"
+    implementation "com.github.skydoves:landscapist-placeholder:$land_scapist_version"
+    implementation "com.github.skydoves:landscapist-animation:$land_scapist_version"
+    implementation "com.github.skydoves:landscapist-transformation:$land_scapist_version"
+
+    //Coil Svg
+    implementation "io.coil-kt:coil-compose:2.0.0"
+    implementation "io.coil-kt:coil-svg:2.0.0"
+
+    implementation 'com.google.code.gson:gson:2.10.1'
+    // splash screen
+    implementation "androidx.core:core-splashscreen:1.0.1"
+
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red_pokedex">#fff91f1f</color>
+    <color name="red_secondary">#fffe4d4d</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#ffA5BCF3</color>
+    <color name="teal_700">#FF789bed</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

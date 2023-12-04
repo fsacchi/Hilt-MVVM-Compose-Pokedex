@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="app_title">Pokedex</string>
+    <string name="title">Title</string>
+    <string name="home">Home</string>
+    <string name="pokemon_detail">Pokemon Detail</string>
+
+    <string name="yes">Yes</string>
+    <string name="do_you_want_to_exit_the_app">Do you want to exit the app?</string>
+    <string name="close_the_app">Close the app</string>
+    <string name="no">No</string>
+    <string name="there_is_no_internet">There is no internet!</string>
+
+    <string name="number">Number</string>
+    <string name="weight">Weight</string>
+    <string name="base_experience">Experience</string>
+    <string name="height">Height</string>
+    <string name="types">Types</string>
+    <string name="sprites">Sprites</string>
+
+</resources>
